@@ -1,4 +1,4 @@
-#[WIP] Swift Equatable Generator
+#Swift Equatable Generator
 
 Xcode 8 Source Code Extension will generate conformance to [Swift Equatable](https://developer.apple.com/reference/swift/equatable) protocol based on type and fields selection. 
 
