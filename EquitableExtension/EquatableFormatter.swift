@@ -20,6 +20,12 @@ extension NSMutableArray {
     }
 }
 
+func * (multiply: Int, str: String) -> String {
+    return (0..<multiply).reduce(str) { (acum, _) -> String in
+        return acum + str
+    }
+}
+
 class EquatableFormatter {
     let buffer: XCSourceTextBuffer
     
@@ -56,12 +62,12 @@ class EquatableFormatter {
         if variables.count == 1 {
             return variables
                 .map {
-                    return indent + indent + "return lhs.\($0) == rhs.\($0)\n"
+                    return 2 * indent + "return lhs.\($0) == rhs.\($0)\n"
             }
             
         }
-        let firstLine = indent + indent + "return lhs.\(variables[1]) == rhs.\(variables[1]) &&"
-        let lastLine = indent + indent + "lhs.\(variables.last!) == rhs.\(variables.last!)"
+        let firstLine = 2 * indent + "return lhs.\(variables[1]) == rhs.\(variables[1]) &&"
+        let lastLine = 3 * indent + "lhs.\(variables.last!) == rhs.\(variables.last!)"
         
         if variables.count == 2 {
             return [firstLine, lastLine]
@@ -69,7 +75,7 @@ class EquatableFormatter {
         
         let body = variables[1..<variables.count-1]
             .map {
-                return indent + indent + "lhs.\($0) == rhs.\($0) && \n"
+                return 3 * indent + "lhs.\($0) == rhs.\($0) && \n"
         }
         
         return [firstLine] + body + [lastLine]
