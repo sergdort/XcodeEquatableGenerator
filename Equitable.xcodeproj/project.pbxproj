@@ -7,19 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25960A481DAA880200E155A7 /* EquatableFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25960A471DAA880200E155A7 /* EquatableFormatter.swift */; };
+		25960A4A1DAA899700E155A7 /* EditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25960A491DAA899700E155A7 /* EditorError.swift */; };
 		25F743FF1DA97E9000CCD5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F743FE1DA97E9000CCD5AD /* AppDelegate.swift */; };
 		25F744011DA97E9000CCD5AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F744001DA97E9000CCD5AD /* ViewController.swift */; };
 		25F744031DA97E9000CCD5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F744021DA97E9000CCD5AD /* Assets.xcassets */; };
 		25F744061DA97E9000CCD5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F744041DA97E9000CCD5AD /* Main.storyboard */; };
+		25F744141DA97ED800CCD5AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F744131DA97ED800CCD5AD /* Cocoa.framework */; };
+		25F744191DA97ED800CCD5AD /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F744181DA97ED800CCD5AD /* SourceEditorExtension.swift */; };
+		25F7441B1DA97ED800CCD5AD /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F7441A1DA97ED800CCD5AD /* SourceEditorCommand.swift */; };
+		25F7441F1DA97ED800CCD5AD /* EquitableExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25F744111DA97ED800CCD5AD /* EquitableExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25F744251DA98D3400CCD5AD /* NSScanner+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F744241DA98D3400CCD5AD /* NSScanner+Swift.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		25F7441D1DA97ED800CCD5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F743F31DA97E9000CCD5AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25F744101DA97ED800CCD5AD;
+			remoteInfo = EquitableExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25F744231DA97ED800CCD5AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25F7441F1DA97ED800CCD5AD /* EquitableExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		25960A471DAA880200E155A7 /* EquatableFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableFormatter.swift; sourceTree = "<group>"; };
+		25960A491DAA899700E155A7 /* EditorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorError.swift; sourceTree = "<group>"; };
 		25F743FB1DA97E9000CCD5AD /* Equitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F743FE1DA97E9000CCD5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F744001DA97E9000CCD5AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25F744021DA97E9000CCD5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F744051DA97E9000CCD5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25F744071DA97E9000CCD5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F744111DA97ED800CCD5AD /* EquitableExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EquitableExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F744131DA97ED800CCD5AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		25F744171DA97ED800CCD5AD /* EquitableExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EquitableExtension.entitlements; sourceTree = "<group>"; };
+		25F744181DA97ED800CCD5AD /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		25F7441A1DA97ED800CCD5AD /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		25F7441C1DA97ED800CCD5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F744241DA98D3400CCD5AD /* NSScanner+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSScanner+Swift.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +70,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25F7440E1DA97ED800CCD5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F744141DA97ED800CCD5AD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				25F743FD1DA97E9000CCD5AD /* Equitable */,
+				25F744151DA97ED800CCD5AD /* EquitableExtension */,
+				25F744121DA97ED800CCD5AD /* Frameworks */,
 				25F743FC1DA97E9000CCD5AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				25F743FB1DA97E9000CCD5AD /* Equitable.app */,
+				25F744111DA97ED800CCD5AD /* EquitableExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +112,36 @@
 			path = Equitable;
 			sourceTree = "<group>";
 		};
+		25F744121DA97ED800CCD5AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25F744131DA97ED800CCD5AD /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25F744151DA97ED800CCD5AD /* EquitableExtension */ = {
+			isa = PBXGroup;
+			children = (
+				25F744181DA97ED800CCD5AD /* SourceEditorExtension.swift */,
+				25F7441A1DA97ED800CCD5AD /* SourceEditorCommand.swift */,
+				25960A491DAA899700E155A7 /* EditorError.swift */,
+				25960A471DAA880200E155A7 /* EquatableFormatter.swift */,
+				25F744241DA98D3400CCD5AD /* NSScanner+Swift.swift */,
+				25F7441C1DA97ED800CCD5AD /* Info.plist */,
+				25F744161DA97ED800CCD5AD /* Supporting Files */,
+			);
+			path = EquitableExtension;
+			sourceTree = "<group>";
+		};
+		25F744161DA97ED800CCD5AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25F744171DA97ED800CCD5AD /* EquitableExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,15 +152,34 @@
 				25F743F71DA97E9000CCD5AD /* Sources */,
 				25F743F81DA97E9000CCD5AD /* Frameworks */,
 				25F743F91DA97E9000CCD5AD /* Resources */,
+				25F744231DA97ED800CCD5AD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25F7441E1DA97ED800CCD5AD /* PBXTargetDependency */,
 			);
 			name = Equitable;
 			productName = Equitable;
 			productReference = 25F743FB1DA97E9000CCD5AD /* Equitable.app */;
 			productType = "com.apple.product-type.application";
+		};
+		25F744101DA97ED800CCD5AD /* EquitableExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F744201DA97ED800CCD5AD /* Build configuration list for PBXNativeTarget "EquitableExtension" */;
+			buildPhases = (
+				25F7440D1DA97ED800CCD5AD /* Sources */,
+				25F7440E1DA97ED800CCD5AD /* Frameworks */,
+				25F7440F1DA97ED800CCD5AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EquitableExtension;
+			productName = EquitableExtension;
+			productReference = 25F744111DA97ED800CCD5AD /* EquitableExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,6 +193,12 @@
 				TargetAttributes = {
 					25F743FA1DA97E9000CCD5AD = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3JZ7RUJD4Q;
+						ProvisioningStyle = Automatic;
+					};
+					25F744101DA97ED800CCD5AD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3JZ7RUJD4Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				25F743FA1DA97E9000CCD5AD /* Equitable */,
+				25F744101DA97ED800CCD5AD /* EquitableExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +229,13 @@
 			files = (
 				25F744031DA97E9000CCD5AD /* Assets.xcassets in Resources */,
 				25F744061DA97E9000CCD5AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25F7440F1DA97ED800CCD5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +251,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25F7440D1DA97ED800CCD5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F744251DA98D3400CCD5AD /* NSScanner+Swift.swift in Sources */,
+				25F744191DA97ED800CCD5AD /* SourceEditorExtension.swift in Sources */,
+				25F7441B1DA97ED800CCD5AD /* SourceEditorCommand.swift in Sources */,
+				25960A481DAA880200E155A7 /* EquatableFormatter.swift in Sources */,
+				25960A4A1DAA899700E155A7 /* EditorError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25F7441E1DA97ED800CCD5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25F744101DA97ED800CCD5AD /* EquitableExtension */;
+			targetProxy = 25F7441D1DA97ED800CCD5AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		25F744041DA97E9000CCD5AD /* Main.storyboard */ = {
@@ -244,8 +378,11 @@
 		25F7440B1DA97E9000CCD5AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
 				INFOPLIST_FILE = Equitable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable;
@@ -257,12 +394,49 @@
 		25F7440C1DA97E9000CCD5AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
 				INFOPLIST_FILE = Equitable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		25F744211DA97ED800CCD5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EquitableExtension/EquitableExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
+				INFOPLIST_FILE = EquitableExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable.EquitableExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		25F744221DA97ED800CCD5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EquitableExtension/EquitableExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
+				INFOPLIST_FILE = EquitableExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable.EquitableExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -286,6 +460,16 @@
 				25F7440C1DA97E9000CCD5AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25F744201DA97ED800CCD5AD /* Build configuration list for PBXNativeTarget "EquitableExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F744211DA97ED800CCD5AD /* Debug */,
+				25F744221DA97ED800CCD5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
