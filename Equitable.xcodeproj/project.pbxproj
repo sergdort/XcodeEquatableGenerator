@@ -16,7 +16,7 @@
 		25F744141DA97ED800CCD5AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F744131DA97ED800CCD5AD /* Cocoa.framework */; };
 		25F744191DA97ED800CCD5AD /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F744181DA97ED800CCD5AD /* SourceEditorExtension.swift */; };
 		25F7441B1DA97ED800CCD5AD /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F7441A1DA97ED800CCD5AD /* SourceEditorCommand.swift */; };
-		25F7441F1DA97ED800CCD5AD /* EquitableExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25F744111DA97ED800CCD5AD /* EquitableExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25F7441F1DA97ED800CCD5AD /* Generate Equatable.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25F744111DA97ED800CCD5AD /* Generate Equatable.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		25F744251DA98D3400CCD5AD /* NSScanner+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F744241DA98D3400CCD5AD /* NSScanner+Swift.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				25F7441F1DA97ED800CCD5AD /* EquitableExtension.appex in Embed App Extensions */,
+				25F7441F1DA97ED800CCD5AD /* Generate Equatable.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,7 @@
 		25F744021DA97E9000CCD5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F744051DA97E9000CCD5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25F744071DA97E9000CCD5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25F744111DA97ED800CCD5AD /* EquitableExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EquitableExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F744111DA97ED800CCD5AD /* Generate Equatable.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Generate Equatable.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F744131DA97ED800CCD5AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		25F744171DA97ED800CCD5AD /* EquitableExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EquitableExtension.entitlements; sourceTree = "<group>"; };
 		25F744181DA97ED800CCD5AD /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				25F743FB1DA97E9000CCD5AD /* Equitable.app */,
-				25F744111DA97ED800CCD5AD /* EquitableExtension.appex */,
+				25F744111DA97ED800CCD5AD /* Generate Equatable.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			);
 			name = EquitableExtension;
 			productName = EquitableExtension;
-			productReference = 25F744111DA97ED800CCD5AD /* EquitableExtension.appex */;
+			productReference = 25F744111DA97ED800CCD5AD /* Generate Equatable.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -418,7 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable.EquitableExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Generate Equatable";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -435,7 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable.EquitableExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Generate Equatable";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
