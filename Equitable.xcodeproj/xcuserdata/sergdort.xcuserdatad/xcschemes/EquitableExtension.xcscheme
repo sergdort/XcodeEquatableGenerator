@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "25F744101DA97ED800CCD5AD"
-               BuildableName = "EquitableExtension.appex"
+               BuildableName = "Generate Equatable.appex"
                BlueprintName = "EquitableExtension"
                ReferencedContainer = "container:Equitable.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25F744101DA97ED800CCD5AD"
-            BuildableName = "EquitableExtension.appex"
+            BuildableName = "Generate Equatable.appex"
             BlueprintName = "EquitableExtension"
             ReferencedContainer = "container:Equitable.xcodeproj">
          </BuildableReference>
