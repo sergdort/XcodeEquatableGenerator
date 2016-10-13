@@ -173,10 +173,14 @@ extension Scanner {
     
     static func scanTypeName(line: String) throws -> String {
         let scanner = Scanner(string: line)
+        let accessModifiers = ["open", "public", "internal", "private", "fileprivate"]
+        accessModifiers.forEach {
+            _ = scanner.scanString($0)
+        }
         guard
             scanner.scanString("struct", into: nil) ||
-                //            scanner.scanString("class", into: nil) || TODO: Add support for enums
-                scanner.scanString("enum", into: nil)
+                scanner.scanString("class", into: nil)
+//                scanner.scanString("enum", into: nil) TODO: Add support for enums
             else {
                 throw EditorError.parseError.nsError
         }
