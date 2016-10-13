@@ -13,9 +13,9 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         
-        let formatter = EquatableFormatter(buffer: invocation.buffer)
+        let formatter = EquatableGenerator(buffer: invocation.buffer)
         do {
-            try formatter.formatt()
+            try formatter.generate()
             completionHandler(nil)
         } catch {
             completionHandler(error)

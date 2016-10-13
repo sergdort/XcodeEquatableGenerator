@@ -1,6 +1,6 @@
 //
 //  EquatableFormatter.swift
-//  Equitable
+//  Equatable
 //
 //  Created by sergdort on 09/10/2016.
 //  Copyright © 2016 sergdort. All rights reserved.
@@ -26,14 +26,14 @@ func * (multiply: Int, str: String) -> String {
     }
 }
 
-class EquatableFormatter {
+class EquatableGenerator {
     let buffer: XCSourceTextBuffer
     
     init(buffer: XCSourceTextBuffer) {
         self.buffer = buffer
     }
     
-    func formatt() throws {
+    func generate() throws {
         let newLines = try generateNewLines()
         self.buffer.lines.addObjects(from: newLines)
     }
