@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0800"
-   version = "1.3">
+   wasCreatedForAppExtension = "YES"
+   version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +15,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "25F744101DA97ED800CCD5AD"
+               BuildableName = "Generate Equatable.appex"
+               BlueprintName = "EquatableExtension"
+               ReferencedContainer = "container:Equatable.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "25F743FA1DA97E9000CCD5AD"
-               BuildableName = "Equitable.app"
-               BlueprintName = "Equitable"
-               ReferencedContainer = "container:Equitable.xcodeproj">
+               BuildableName = "Equatable.app"
+               BlueprintName = "Equatable"
+               ReferencedContainer = "container:Equatable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25F743FA1DA97E9000CCD5AD"
-            BuildableName = "Equitable.app"
-            BlueprintName = "Equitable"
-            ReferencedContainer = "container:Equitable.xcodeproj">
+            BlueprintIdentifier = "25F744101DA97ED800CCD5AD"
+            BuildableName = "Generate Equatable.appex"
+            BlueprintName = "EquatableExtension"
+            ReferencedContainer = "container:Equatable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -43,22 +58,23 @@
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25F743FA1DA97E9000CCD5AD"
-            BuildableName = "Equitable.app"
-            BlueprintName = "Equitable"
-            ReferencedContainer = "container:Equitable.xcodeproj">
+            BuildableName = "Equatable.app"
+            BlueprintName = "Equatable"
+            ReferencedContainer = "container:Equatable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,15 +85,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25F743FA1DA97E9000CCD5AD"
-            BuildableName = "Equitable.app"
-            BlueprintName = "Equitable"
-            ReferencedContainer = "container:Equitable.xcodeproj">
+            BuildableName = "Equatable.app"
+            BlueprintName = "Equatable"
+            ReferencedContainer = "container:Equatable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

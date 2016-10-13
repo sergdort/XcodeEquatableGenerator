@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2585D9EF1DB00D4100C5B2CD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25F7441C1DA97ED800CCD5AD /* Info.plist */; };
+		2585D9F01DB00D4400C5B2CD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25F744071DA97E9000CCD5AD /* Info.plist */; };
 		25960A481DAA880200E155A7 /* EquatableFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25960A471DAA880200E155A7 /* EquatableFormatter.swift */; };
 		25960A4A1DAA899700E155A7 /* EditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25960A491DAA899700E155A7 /* EditorError.swift */; };
 		25F743FF1DA97E9000CCD5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F743FE1DA97E9000CCD5AD /* AppDelegate.swift */; };
@@ -47,7 +49,7 @@
 /* Begin PBXFileReference section */
 		25960A471DAA880200E155A7 /* EquatableFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableFormatter.swift; sourceTree = "<group>"; };
 		25960A491DAA899700E155A7 /* EditorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorError.swift; sourceTree = "<group>"; };
-		25F743FB1DA97E9000CCD5AD /* Equitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F743FB1DA97E9000CCD5AD /* Equatable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equatable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F743FE1DA97E9000CCD5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F744001DA97E9000CCD5AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25F744021DA97E9000CCD5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,8 +86,8 @@
 		25F743F21DA97E9000CCD5AD = {
 			isa = PBXGroup;
 			children = (
-				25F743FD1DA97E9000CCD5AD /* Equitable */,
-				25F744151DA97ED800CCD5AD /* EquitableExtension */,
+				25F743FD1DA97E9000CCD5AD /* Equatable */,
+				25F744151DA97ED800CCD5AD /* EquatableExtension */,
 				25F744121DA97ED800CCD5AD /* Frameworks */,
 				25F743FC1DA97E9000CCD5AD /* Products */,
 			);
@@ -94,13 +96,13 @@
 		25F743FC1DA97E9000CCD5AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25F743FB1DA97E9000CCD5AD /* Equitable.app */,
+				25F743FB1DA97E9000CCD5AD /* Equatable.app */,
 				25F744111DA97ED800CCD5AD /* Generate Equatable.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		25F743FD1DA97E9000CCD5AD /* Equitable */ = {
+		25F743FD1DA97E9000CCD5AD /* Equatable */ = {
 			isa = PBXGroup;
 			children = (
 				25F743FE1DA97E9000CCD5AD /* AppDelegate.swift */,
@@ -109,7 +111,7 @@
 				25F744041DA97E9000CCD5AD /* Main.storyboard */,
 				25F744071DA97E9000CCD5AD /* Info.plist */,
 			);
-			path = Equitable;
+			path = Equatable;
 			sourceTree = "<group>";
 		};
 		25F744121DA97ED800CCD5AD /* Frameworks */ = {
@@ -120,7 +122,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		25F744151DA97ED800CCD5AD /* EquitableExtension */ = {
+		25F744151DA97ED800CCD5AD /* EquatableExtension */ = {
 			isa = PBXGroup;
 			children = (
 				25F744181DA97ED800CCD5AD /* SourceEditorExtension.swift */,
@@ -131,7 +133,7 @@
 				25F7441C1DA97ED800CCD5AD /* Info.plist */,
 				25F744161DA97ED800CCD5AD /* Supporting Files */,
 			);
-			path = EquitableExtension;
+			path = EquatableExtension;
 			sourceTree = "<group>";
 		};
 		25F744161DA97ED800CCD5AD /* Supporting Files */ = {
@@ -145,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		25F743FA1DA97E9000CCD5AD /* Equitable */ = {
+		25F743FA1DA97E9000CCD5AD /* Equatable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25F7440A1DA97E9000CCD5AD /* Build configuration list for PBXNativeTarget "Equitable" */;
+			buildConfigurationList = 25F7440A1DA97E9000CCD5AD /* Build configuration list for PBXNativeTarget "Equatable" */;
 			buildPhases = (
 				25F743F71DA97E9000CCD5AD /* Sources */,
 				25F743F81DA97E9000CCD5AD /* Frameworks */,
@@ -159,14 +161,14 @@
 			dependencies = (
 				25F7441E1DA97ED800CCD5AD /* PBXTargetDependency */,
 			);
-			name = Equitable;
+			name = Equatable;
 			productName = Equitable;
-			productReference = 25F743FB1DA97E9000CCD5AD /* Equitable.app */;
+			productReference = 25F743FB1DA97E9000CCD5AD /* Equatable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		25F744101DA97ED800CCD5AD /* EquitableExtension */ = {
+		25F744101DA97ED800CCD5AD /* EquatableExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25F744201DA97ED800CCD5AD /* Build configuration list for PBXNativeTarget "EquitableExtension" */;
+			buildConfigurationList = 25F744201DA97ED800CCD5AD /* Build configuration list for PBXNativeTarget "EquatableExtension" */;
 			buildPhases = (
 				25F7440D1DA97ED800CCD5AD /* Sources */,
 				25F7440E1DA97ED800CCD5AD /* Frameworks */,
@@ -176,7 +178,7 @@
 			);
 			dependencies = (
 			);
-			name = EquitableExtension;
+			name = EquatableExtension;
 			productName = EquitableExtension;
 			productReference = 25F744111DA97ED800CCD5AD /* Generate Equatable.appex */;
 			productType = "com.apple.product-type.xcode-extension";
@@ -203,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 25F743F61DA97E9000CCD5AD /* Build configuration list for PBXProject "Equitable" */;
+			buildConfigurationList = 25F743F61DA97E9000CCD5AD /* Build configuration list for PBXProject "Equatable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -216,8 +218,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25F743FA1DA97E9000CCD5AD /* Equitable */,
-				25F744101DA97ED800CCD5AD /* EquitableExtension */,
+				25F743FA1DA97E9000CCD5AD /* Equatable */,
+				25F744101DA97ED800CCD5AD /* EquatableExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +231,7 @@
 			files = (
 				25F744031DA97E9000CCD5AD /* Assets.xcassets in Resources */,
 				25F744061DA97E9000CCD5AD /* Main.storyboard in Resources */,
+				2585D9F01DB00D4400C5B2CD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2585D9EF1DB00D4100C5B2CD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +272,7 @@
 /* Begin PBXTargetDependency section */
 		25F7441E1DA97ED800CCD5AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 25F744101DA97ED800CCD5AD /* EquitableExtension */;
+			target = 25F744101DA97ED800CCD5AD /* EquatableExtension */;
 			targetProxy = 25F7441D1DA97ED800CCD5AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -383,9 +387,9 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
-				INFOPLIST_FILE = Equitable/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Equatable/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equatable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -399,9 +403,9 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
-				INFOPLIST_FILE = Equitable/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Equatable/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equatable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -410,14 +414,14 @@
 		25F744211DA97ED800CCD5AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = EquitableExtension/EquitableExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = EquatableExtension/EquatableExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
-				INFOPLIST_FILE = EquitableExtension/Info.plist;
+				INFOPLIST_FILE = EquatableExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable.EquitableExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equatable.EquatableExtension;
 				PRODUCT_NAME = "Generate Equatable";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -427,14 +431,14 @@
 		25F744221DA97ED800CCD5AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = EquitableExtension/EquitableExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = EquatableExtension/EquatableExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3JZ7RUJD4Q;
-				INFOPLIST_FILE = EquitableExtension/Info.plist;
+				INFOPLIST_FILE = EquatableExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equitable.EquitableExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdort.Equatable.EquatableExtension;
 				PRODUCT_NAME = "Generate Equatable";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -444,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25F743F61DA97E9000CCD5AD /* Build configuration list for PBXProject "Equitable" */ = {
+		25F743F61DA97E9000CCD5AD /* Build configuration list for PBXProject "Equatable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25F744081DA97E9000CCD5AD /* Debug */,
@@ -453,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25F7440A1DA97E9000CCD5AD /* Build configuration list for PBXNativeTarget "Equitable" */ = {
+		25F7440A1DA97E9000CCD5AD /* Build configuration list for PBXNativeTarget "Equatable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25F7440B1DA97E9000CCD5AD /* Debug */,
@@ -462,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25F744201DA97ED800CCD5AD /* Build configuration list for PBXNativeTarget "EquitableExtension" */ = {
+		25F744201DA97ED800CCD5AD /* Build configuration list for PBXNativeTarget "EquatableExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25F744211DA97ED800CCD5AD /* Debug */,
