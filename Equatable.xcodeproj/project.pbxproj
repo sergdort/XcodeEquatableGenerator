@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2585D9EF1DB00D4100C5B2CD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25F7441C1DA97ED800CCD5AD /* Info.plist */; };
-		2585D9F01DB00D4400C5B2CD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25F744071DA97E9000CCD5AD /* Info.plist */; };
 		25960A481DAA880200E155A7 /* EquatableFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25960A471DAA880200E155A7 /* EquatableFormatter.swift */; };
 		25960A4A1DAA899700E155A7 /* EditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25960A491DAA899700E155A7 /* EditorError.swift */; };
 		25F743FF1DA97E9000CCD5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F743FE1DA97E9000CCD5AD /* AppDelegate.swift */; };
@@ -231,7 +229,6 @@
 			files = (
 				25F744031DA97E9000CCD5AD /* Assets.xcassets in Resources */,
 				25F744061DA97E9000CCD5AD /* Main.storyboard in Resources */,
-				2585D9F01DB00D4400C5B2CD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2585D9EF1DB00D4100C5B2CD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +303,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -356,6 +353,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
