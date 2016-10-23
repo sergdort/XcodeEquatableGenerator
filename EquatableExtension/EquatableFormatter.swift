@@ -63,22 +63,18 @@ class EquatableGenerator {
             return variables
                 .map {
                     return 2 * indent + "return lhs.\($0) == rhs.\($0)\n"
-            }
+                }
             
         }
-        let firstLine = 2 * indent + "return lhs.\(variables[1]) == rhs.\(variables[1]) &&"
-        let lastLine = 3 * indent + "lhs.\(variables.last!) == rhs.\(variables.last!)"
-        
-        if variables.count == 2 {
-            return [firstLine, lastLine]
+        return variables.enumerated().map { (offset, item) -> String in
+            if offset == 0 {
+                return 2 * indent + "return lhs.\(item) == rhs.\(item) &&"
+            }
+            if offset == variables.count - 1 {
+                return 3 * indent + "lhs.\(item) == rhs.\(item)"
+            }
+            return 3 * indent + "lhs.\(item) == rhs.\(item) && \n"
         }
-        
-        let body = variables[1..<variables.count-1]
-            .map {
-                return 3 * indent + "lhs.\($0) == rhs.\($0) && \n"
-        }
-        
-        return [firstLine] + body + [lastLine]
     }
     
     private func generateContent(with typeName: String, body: [String]) -> [String] {
@@ -97,13 +93,13 @@ class EquatableGenerator {
             throw EditorError.missingSelection.nsError
         }
         let start = selection.start.line + 1
-        let end = selection.end.line - 1
+        let end = selection.end.line
         let selectionRange = start...end
         
         return try selectionRange
-            .map(self.buffer.lines.castAtIdexTo(String.self))
+            .map(buffer.lines.castAtIdexTo(String.self))
             .filter(isNotEmptyLine)
-            .map(Scanner.scanVariableName)
+            .flatMap(Scanner.scanVariableName)
     }
     
     private func isNotEmptyLine(_ line: String) throws -> Bool {

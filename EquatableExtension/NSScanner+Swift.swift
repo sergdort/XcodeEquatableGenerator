@@ -188,10 +188,14 @@ extension Scanner {
             throw EditorError.parseError.nsError
         }
         
+        if let typeName = Scanner(string: typeName).scanUpTo(":") {
+            return typeName.trimmingCharacters(in: CharacterSet(charactersIn: " "))
+        }
+        
         return typeName.trimmingCharacters(in: CharacterSet(charactersIn: " "))
     }
     
-    static func scanVariableName(line: String) throws -> String {
+    static func scanVariableName(line: String) -> String? {
         let accessModifiers = ["open", "public", "internal", "private", "fileprivate"]
         let scanner = Scanner(string: line)
         var weak = scanner.scanString("weak", into: nil)
@@ -203,10 +207,10 @@ extension Scanner {
         weak = weak || scanner.scanString("weak", into: nil)
         
         guard scanner.scanString("let", into: nil) || scanner.scanString("var", into: nil) else {
-            throw EditorError.parseError.nsError
+            return nil
         }
         guard let variableName = scanner.scanUpTo(":") else {
-            throw EditorError.parseError.nsError
+            return nil
         }
         
         return variableName
