@@ -5,6 +5,9 @@ Xcode 8 Source Code Extension will generate conformance to [Swift Equatable](htt
 ##Features:
 - generates `Equatable` conformance for `struct` or `class`
 
+##Limitations:
+- it's only available for Xcode 8.* and macOS Sierra 
+
 ##TODO:
 - potential bug fixes
 - add support for `enum`
