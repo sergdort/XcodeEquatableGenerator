@@ -1,18 +1,22 @@
-#Swift Equatable Generator
+# Depricated!
+
+There is not need for it at the moment as Swift compiler can do that for us 🚀
+
+# Swift Equatable Generator
 
 Xcode 8 Source Code Extension will generate conformance to [Swift Equatable](https://developer.apple.com/reference/swift/equatable) protocol based on type and fields selection. 
 
-##Features:
+## Features:
 - generates `Equatable` conformance for `struct` or `class`
 
-##Limitations:
+## Limitations:
 - it's only available for Xcode 8.* and macOS Sierra 
 
-##TODO:
+## TODO:
 - potential bug fixes
 - add support for `enum`
 
-##Example:
+## Example:
 ![Demo](Resources/Equatable.gif)
 
 ## Installation
